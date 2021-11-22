@@ -1,6 +1,6 @@
 {
   "name": "ryuzeke-chest-task",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "ryuzekejs@gmail.com",
   "description": "ryuzeke chest task",
   "main": "./src/app.ts",
