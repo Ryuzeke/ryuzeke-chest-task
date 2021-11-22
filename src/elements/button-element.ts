@@ -24,7 +24,7 @@ export class ButtonElement extends Container{
         this.active();
 
         if(onClick){
-            this.addListener("click", ()=>{
+            this.addListener("pointerdown", ()=>{
                 onClick();
             });
         }

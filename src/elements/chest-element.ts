@@ -33,7 +33,7 @@ export class ChestElement extends Container{
         this.sceneManager = typedi.Container.get(SceneManager);
         this.chestSprite = new Sprite(Loader.shared.resources["chest.png"].texture);
         this.chestSprite.anchor.set(0.5, 0.5);
-        this.addListener("click", this.goToNextState.bind(this));
+        this.addListener("pointerdown", this.goToNextState.bind(this));
         this.updateState(this.currentState);
     }
 
