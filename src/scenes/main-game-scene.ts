@@ -69,11 +69,11 @@ export class MainGameScene extends SceneLayout {
 
             case STATE_MACHINE_STATES.ON_ROUND_START:
                 this.chestsContainer.interactiveChildren = false;
+                this.currentOpennedChests++;
                 break;
 
             case STATE_MACHINE_STATES.ON_ROUND_END:
                 this.chestsContainer.interactiveChildren = true;
-                this.currentOpennedChests++;
                 if(this.currentOpennedChests === this.chestsLength){
                     this.onStateChange(STATE_MACHINE_STATES.ON_BETTING_STOP)
                 }
@@ -81,7 +81,7 @@ export class MainGameScene extends SceneLayout {
 
             case STATE_MACHINE_STATES.ON_BETTING_STOP:
                 this.chestsContainer.interactiveChildren = false;
-
+                this.currentOpennedChests = 0;
                 // set timeout/interval should be connected with pixi ticker, just didn't had time
                 setTimeout(() => {
                     this.chestsContainer.children.forEach(chest => {
