@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/Ryuzeke/ryuzeke-chest-task/compare/v1.0.1...v1.0.2) (2021-11-22)
+
+
+### Bug Fixes
+
+* click event to pointerdown for mobile ([8476de6](https://github.com/Ryuzeke/ryuzeke-chest-task/commit/8476de6aa8c386a92eb5e0be27f52839a9640884))
+
 ### 1.0.1 (2021-11-22)
 
 ### 1.0.3 (2021-11-22)
